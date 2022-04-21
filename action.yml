@@ -1,0 +1,17 @@
+name: 'Oilmod1 - Azure Devops Release'
+description: 'Generate github release based on azure devops tasks'
+inputs:
+  tasks:
+    description: 'Comma separated list of tasks'
+    required: true
+    default: ''
+  orgUrl:
+    description: 'Org url in azure devops'
+    required: false
+    default: 'https://dev.azure.com/equinor'
+outputs:
+  notes:
+    description: 'Parsed release notes'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

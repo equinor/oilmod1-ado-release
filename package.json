@@ -1,0 +1,22 @@
+{
+  "name": "ado-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.ts -o dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1",
+    "azure-devops-node-api": "^11.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
