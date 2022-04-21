@@ -26,5 +26,9 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the notes
         run: |
-          echo "${{ steps.getnotes.outputs.notes }}"
+          printf "${{ steps.getnotes.outputs.notes }}"
 ```
+
+output:
+* AB#12345 - Title from ADO
+* AB#23456 - Title from ADO
